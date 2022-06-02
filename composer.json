@@ -1,10 +1,14 @@
 {
-  "name": "rugalib/ruga-asset-skeleton",
-  "description": "Template for rugalib assets",
+  "name": "rugalib/ruga-asset-jquery-rugaform",
+  "description": "Rugalib form plugin for jquery",
   "homepage": "https://github.com/rugalib",
   "type": "library",
   "require": {
-    "php": "^7.4"
+    "php": "^7.4",
+    "components/jquery": "*",
+    "rugalib/asset-jquery-validation": "*",
+    "rugalib/asset-alertifyjs": "*",
+    "rugalib/asset-jquery-hotkeys": "*"
   },
   "repositories": [
     {
@@ -20,13 +24,13 @@
   ],
   "autoload": {
     "psr-4": {
-      "Ruga\\Asset\\Skeleton\\": "src/"
+      "Ruga\\Asset\\jquery_rugaform\\": "src/"
     }
   },
   "extra": {
     "laminas": {
-      "component": "Ruga\\Asset\\Skeleton",
-      "config-provider": "Ruga\\Asset\\Skeleton\\ConfigProvider"
+      "component": "Ruga\\Asset\\jquery_rugaform",
+      "config-provider": "Ruga\\Asset\\jquery_rugaform\\ConfigProvider"
     }
   }
 }

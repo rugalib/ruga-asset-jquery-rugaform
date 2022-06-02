@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Ruga\Asset\Skeleton;
+namespace Ruga\Asset\jquery_rugaform;
 
 /**
  * ConfigProvider.
@@ -16,9 +16,9 @@ class ConfigProvider
         return [
             'ruga' => [
                 'asset' => [
-                    'rugalib/ruga-asset-alertify' => [
-                        'scripts' => [],
-                        'stylesheets' => [],
+                    'rugalib/ruga-asset-jquery-rugaform' => [
+                        'scripts' => ['jquery.rugaform.js'],
+                        'stylesheets' => ['jquery.rugaform.css'],
                     ],
                 ],
             ],
